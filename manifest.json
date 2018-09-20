@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Stream Enhancer",
+  "description": "Open streams in an ad and malware free environment!",
+  "version": "0.1",
+  "background": {
+    "scripts": [
+      "js/background.js",
+      "js/hot_reload.js"
+    ]
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "64": "images/icon64.png",
+    "32": "images/icon32.png",
+    "38": "images/icon.png",
+    "128": "images/icon128.png"
+  },
+  "minimum_chrome_version": "10.0",
+  "devtools_page": "devtools.html",
+  "homepage_url": "https://jonlu.ca",
+  "web_accessible_resources": [
+    "js/*",
+    "html/*",
+    "data/*"
+  ]
+}
