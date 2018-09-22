@@ -2,8 +2,16 @@
 // function to do this
 function _log(logEntry) {
   if (typeof logEntry === "object") {
-    chrome.devtools.inspectedWindow.eval('console.log("Request: " + unescape("' + escape(JSON.stringify(logEntry)) + '"))');
+    chrome.devtools.inspectedWindow.eval('console.log(unescape("' + escape(JSON.stringify(logEntry)) + '"))');
   } else if (typeof logEntry === "string") {
-    chrome.devtools.inspectedWindow.eval('console.log("Request: " + unescape("' + escape(logEntry) + '"))');
+    chrome.devtools.inspectedWindow.eval('console.log(unescape("' + escape(logEntry) + '"))');
   }
+}
+
+function _logStartGroup() {
+  chrome.devtools.inspectedWindow.eval('console.group()');
+}
+
+function _logEndGroup() {
+  chrome.devtools.inspectedWindow.eval('console.groupEnd()');
 }
