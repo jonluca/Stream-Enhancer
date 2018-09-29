@@ -7,3 +7,7 @@ Chrome Extension to automatically find and retrieve streams on a page, as well a
 ## Usage
 
 Install the Chrome Extension and open Devtools, then go to the Stream Enhancer tab. 
+
+## More Information
+
+This was originally created in conjunction with [this](https://blog.jonlu.ca/posts/illegal-streams) blog post.
