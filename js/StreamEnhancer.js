@@ -18,6 +18,8 @@ function requestMonitor(request) {
       for (const header of request.request.headers) {
         debugLink += `${header.name}: ${header.value}<br>`;
       }
+      debugLink += `<b>XMLHttpRequest Prototype</b>:<br>`;
+      debugLink += XMLHttpRequest.prototype.open.toString();
       debugLink += `</div>`;
       $(".debugResults").append(debugLink);
     }
