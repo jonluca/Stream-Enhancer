@@ -9,4 +9,14 @@ $(function () {
     console.log("Intercepting network requests");
     shouldContinueToMonitor = true;
   }
+
+  $("#debug").on('click', () => {
+    let debugResults = $(".debugResults");
+    if (debugResults.css('display') === "none") {
+      debugResults.css('display', 'block');
+    } else {
+      debugResults.css('display', 'none');
+    }
+  });
+
 });

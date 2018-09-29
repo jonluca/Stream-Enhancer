@@ -206,7 +206,7 @@ button {
 .loader {
   display: none;
   font-size: 10px;
-  margin: 50px auto;
+  margin: 135px auto auto auto;
   text-indent: -9999em;
   width: 11em;
   height: 11em;
@@ -270,4 +270,25 @@ button {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.debugResults {
+  display: none;
+}
+
+.debug {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.debugLink {
+  max-width: 30%;
+  font-size: 14px;
+  word-break: break-all;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.debugLink b {
+  font-size: 20px;
 }
